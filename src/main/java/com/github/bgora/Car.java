@@ -2,12 +2,18 @@ package com.github.bgora;
 
 public class Car {
 
-    private Integer horsePower;
-    private Integer maxSpeed;
+    private final String name;
+    private final Integer horsePower;
+    private final Integer maxSpeed;
 
-    public Car(final Integer horsePower, final Integer maxSpeed) {
+    public Car(final String name, final Integer horsePower, final Integer maxSpeed) {
+        this.name = name;
         this.horsePower = horsePower;
         this.maxSpeed = maxSpeed;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Integer getHorsePower() {
